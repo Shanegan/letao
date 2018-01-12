@@ -34,6 +34,27 @@ $(function () {
   //二级菜单显示隐藏功能
   $(".second").prev().on("click",function(){
     $(this).next().slideToggle();
-  })
+  });
+
+  $(".icon_menu").on("click",function(){
+    $(".lt_aside").toggleClass("now");
+    $(".lt_main").toggleClass('now');
+  });
+
+  $(".icon_loginout").on("click",function(){
+    $("#logoutModal").modal('show');
+  });
+  $(".btn_logout").off().on("click",function(){
+    $.ajax({
+      type:"get",
+      url:"/employee/employeeLogout",
+      success:function(info){
+        console.log(info);
+        if(info.cuccess){
+          location.href = "login.html";
+        }
+      }
+    })
+  });
 
 })
