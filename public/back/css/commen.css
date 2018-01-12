@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+html,body{
+  height: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
 .body_bg {
   background-color: #222d32;
 }
@@ -6,4 +17,57 @@
 }
 .panel h4 {
   text-align: center;
+}
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  float: left;
+}
+.aside_brand {
+  height: 50px;
+  width: 180px;
+  background-color: #367fa9;
+}
+.aside_brand a {
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+}
+.user img{
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.user p {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+.navbar ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #ccc;
+  border-left: 3px solid transparent;
+}
+.second,
+.first {
+  padding-left: 20px;
+}
+.lt_main {
+  width: 100%;
+  background-color: indianred;
+  height: 100%;
+  padding-left: 180px;
 }
