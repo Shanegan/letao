@@ -17,18 +17,19 @@ $(function () {
   });
 
 
+
   //在飞登录页面，发送ajax请求，询问用户是否登录，如果没有登录。。。。
-  //if (location.href.indexOf("login.html") == -1) {
-  //  $.ajax({
-  //    type:"get",
-  //    url:"/employee/checkRootLogin",
-  //    success:function(info){
-  //      if(info.error == 400){
-  //        locatin.href = "login.html";
-  //      }
-  //    }
-  //  });
-  //}
+  if (location.href.indexOf("login.html") == -1) {
+    $.ajax({
+      type:"get",
+      url:"/employee/checkRootLogin",
+      success:function(info){
+        if(info.error == 400){
+          location.href = "login.html";
+        }
+      }
+    });
+  }
 
 
   //二级菜单显示隐藏功能
