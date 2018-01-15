@@ -22,7 +22,7 @@ a:hover {
   width: 180px;
   height: 100%;
   background-color: #222d32;
-  position: absolute;
+  position: fixed;
   transition: all 1s;
   left:0;
 }
@@ -72,12 +72,15 @@ a:hover {
   height: 100%;
   padding-left: 180px;
   transition: all 1s;
+  padding-top: 70px;
 }
 .lt_main .main_top {
   width: 100%;
   height: 50px;
   background-color: #3c8dbc;
   margin-bottom: 20px;
+  position: fixed;
+  top: 0;
 }
 .main_top a {
   display: block;
@@ -105,6 +108,43 @@ a:hover {
   width: 45%;
   height: 400px;
 }
+table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+.m_t {
+  margin-bottom: 20px;
+}
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+.fileupload_box {
+  width: 82px;
+  height: 34px;
+  position: relative;
+}
+.fileupload_box:hover button {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.fileupload_box input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.fileupload_box:hover button {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+
 
 
 

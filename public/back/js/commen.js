@@ -2,7 +2,6 @@
  * Created by Administrator on 2018/1/11 0011.
  */
 $(function () {
-  console.log(NProgress);
   NProgress.configure({
     showSpinner: false//关闭进度环
   });

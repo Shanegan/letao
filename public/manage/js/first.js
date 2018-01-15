@@ -85,6 +85,7 @@ $(function () {
       url:"/category/addTopCategory",
       data:$form.serialize(),
       success:function (info) {
+        console.log(info);
         if(info.success){
 
           //关闭模态框
